@@ -1,0 +1,9 @@
+<h1>cocacola</h1>
+
+<form action="" [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value.bottle)">
+  <label for="">Enter the number of bottle cola you have:</label>
+  <input type="number" formControlName="bottle">
+  <button>submit</button>
+</form>
+
+<h3>Maximum number of bottle Cola:{{maxNumOfBottleCola}}</h3>
